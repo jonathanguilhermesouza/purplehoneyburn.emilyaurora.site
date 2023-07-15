@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Blog Emily Aurora - Purple honey</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Intro settings -->
+  <style>
+    body {
+      color: rgb(45, 45, 45);
+    }
+
+    @media (max-width: 600px) {
+      .headline-size {
+        font-size: 29px;
+        line-height: 43px;
+      }
+
+      .description-size {
+        font-size: 24px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .headline-size {
+        font-size: 48px;
+        line-height: 70px;
+      }
+
+      .description-size {
+        font-size: 24px;
+      }
+
+      .mt-not-mobile {
+        margin-top: 50px !important;
+      }
+    }
+
+    .animated {
+      animation-duration: 2s;
+      animation-fill-mode: both
+    }
+
+    .animated.infinite {
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes swing {
+      20% {
+        transform: rotate(5deg)
+      }
+
+      40% {
+        transform: rotate(-5deg)
+      }
+
+      to {
+        transform: rotate(0deg)
+      }
+    }
+
+    .btn-swing {
+      transform-origin: top center;
+      animation-name: swing
+    }
+  </style>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      // Obter todos os parâmetros da URL
+      var queryParams = window.location.search.substring(1).split("&");
+      var params = {};
+      for (var i = 0; i < queryParams.length; i++) {
+        var pair = queryParams[i].split("=");
+        params[pair[0]] = decodeURIComponent(pair[1]);
+      }
+
+      // Localizar todos os botões e links de ação na página
+      var buttonsAndLinks = document.querySelectorAll('button:not([href^=\"#\"]), a:not([href^=\"#\"])');
+
+      // Inserir os parâmetros da URL em cada botão ou link de ação encontrado
+      for (var i = 0; i < buttonsAndLinks.length; i++) {
+        var buttonOrLink = buttonsAndLinks[i];
+        var href = buttonOrLink.getAttribute('href');
+        var buttonData = buttonOrLink.dataset;
+        if (href) {
+          // Adicionar os parâmetros da URL à URL atual do link
+          var newHref = href;
+          if (newHref.indexOf('?') > -1) {
+            newHref += '&';
+          } else {
+            newHref += '?';
+          }
+          for (var key in params) {
+            newHref += key + '=' + encodeURIComponent(params[key]) + '&';
+          }
+          newHref = newHref.slice(0, -1); // remover o último \"&\"
+          buttonOrLink.setAttribute('href', newHref);
+        }
+        if (buttonData) {
+          // Adicionar os parâmetros da URL como data-* attributes do botão
+          for (var key in params) {
+            buttonOrLink.dataset[key] = params[key];
+          }
+        }
+      }
+    });
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '108114239014783');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=108114239014783&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-sm-12">
+
+
+
+
+
+      <!-- Jumbotron -->
+      <div class="p-2 text-center bg-light">
+        <div class="row">
+
+          <div class="col-md-12">
+            <h1 class="headline-size">
+              Discover How this 
+              <span style=" background-color: #ffff00; padding: 5px; font-style: italic;"><strong> *7-second Purple Honey*</strong> <br /></span> Took me from 275 to 155!
+            </h1>
+            <h2 style="color: rgb(96, 96, 96)">My Transformation Story</h2>
+          </div>
+
+          <div class="col-md-4 text-center mt-2 description-size mt-not-mobile">
+            <img src="./img/3-Before-269-.png">
+            <h5 class="mt-2">The Old Me</h5>
+          </div>
+          <div class="col-md-8 mt-2 description-size mt-not-mobile" style="text-align: left;">
+
+            <p>My name is Emily and this one in the photo was my old version...</p><br />
+
+            <p>Years ago, several people laughed at me, I realized that people spoke badly of my size wherever I went. I
+              fell into a deep depression...</p><br />
+
+            <p>After this shock of reality. I remember that:</p><br />
+
+            <p>✅<b>I had a lot of energy</b> all day
+            <p>✅<b>Easily get away</b> with eating burgers, fries, pizza and ice cream</p>
+            <p>✅<b>I maintained a trim figure</b> Without going to the gym at all</p>
+            <p>✅<b>I felt confident</b> in my clothes, and my swimsuit!</p><br />
+            <p>That wonderful time passed and years later I became a mother and I was relaxed about my size.</p><br />
+            <p>I was completely frustrated that I couldn't speed up my metabolism like years ago. 😭</p><br />
+            <p>But that changed... </p><br />
+            <p>The new discovery of 2023 that you will see below will motivate you.</p>
+            <br />
+            <p>Read until the end...</p><br />
+          </div>
+        </div>
+
+      </div>
+      <!-- Jumbotron -->
+      <!--Main Navigation-->
+
+      <!--Main layout-->
+      <div class="col-md-12 text-center">
+        <img src="./img/banner1.png" class="w-100 d-none d-md-block">
+        <img src="./img/mbanner1.png" class="w-100 d-block d-md-none">
+        <div class="p-5 description-size" style="text-align: left;">
+          <p><b>Those words stuck with me for the following 30 years! 😔</b></p>
+          <p> As soon as I had children, there was my excuse why I struggled keeping the pounds off.
+            I never blamed the chocolate, coffee and ice cream I enjoyed daily.</p>
+        </div>
+        <img src="./img/banner2.png" class="w-100 d-none d-md-block">
+        <img src="./img/mbanner2.png" class="w-100 d-block d-md-none">
+        <div class="p-5 description-size" style="text-align: left;">
+          <p>
+            <b>I watched my mother pass due to poor eating habits, obesity, diabetes and much more.</b>
+          </p>
+
+          <p>
+            You'd think that would've been a wake up call to get a grip and get my life back on track. Right!
+          </p>
+
+          <p>
+            It got to the point where walking across the room to the refrigerator would have me gasping for air.
+          </p>
+
+          <p>
+            Not to mention the excruciating pain in my ankles due to the swelling...
+          </p>
+
+          <p>
+            <b>I had to get to that refrigerator for my ice cream and all the other junk I shouldn't be eating!</b>
+          </p>
+
+          <p>
+            What had I become? Was I destined to follow in my mother's footsteps?
+            Was there anyone or anything that could help me?
+          </p>
+        </div>
+        <img src="./img/banner3.png" class="w-100 d-none d-md-block">
+        <img src="./img/mbanner3.png" class="w-100 d-block d-md-none">
+        <div class="p-5 description-size" style="text-align: left;">
+          <p>I was desperate and hopeless until the day I was just scrolling through Facebook
+            and saw this video about this 2023 Breakthrough Discovery that was causing the
+            medical community a frenzy...
+          </p>
+
+          <p>
+            This discovery is called <b>Purple Honey</b> by scientists, what scientists were intrigued by is that this
+            specific
+            honey has an enzyme capable of accelerating metabolism.
+          </p>
+
+          <img src="./img/purple honey burn.png" class="w-100">
+
+          <p class="mt-4">
+            <b>
+              This discovery completely changed my life.
+            </b>
+          </p>
+
+          <p>
+            <b>
+              I am an eternal skeptic, but when I came back from Facebook and later saw a presentation, it caught my
+              attention because it was something totally different from what I had already seen. Glad I saw this video,
+              today I am a new woman.
+            </b>
+          </p>
+
+          <p>
+            At first, I thought to myself that "nothing could be this easy..." But I felt that it
+            wouldn't hurt to give it a try.
+          </p>
+
+          <p>
+            <b>
+              I get teared up whenever I think about how grateful I am that I learned this little secret.
+            </b>
+          </p>
+
+          <p>
+            I call it a secret because if everyone knew we didn’t have to work out an hour a
+            day, or fast, or eat nothing but kale chips, the fitness and diet community would be out of business!
+          </p>
+        </div>
+        <img src="./img/banner4.png" class="w-100 d-none d-md-block">
+        <img src="./img/banner5.png" class="w-100 mt-4 d-none d-md-block">
+        <img src="./img/mbanner4.png" class="w-100 d-block d-md-none">
+        <img src="./img/mbanner5.png" class="mt-4 w-100 d-block d-md-none">
+        <div class="p-5 description-size" style="text-align: left;">
+          <p>
+            People I haven’t seen in a while do a double-take when they see
+            meI have so much more confidence today, and I enjoy shopping for clothes
+            (instead of feeling dread).
+          </p>
+        </div>
+        <img src="./img/banner6.png" class="w-100 d-none d-md-block">
+        <img src="./img/mbanner6.png" class="w-100 d-block d-md-none">
+        <div class="p-1 description-size">
+          <p>I'm new Emily, See!</p>
+          <p class="headline-size"><b>I'm 52, 5'5" and Just Reached 155... <br />
+              After YEARS of Being at 275!</b>
+          </p>
+          <p class="mt-4" style="font-style: italic; color: #0077EE; text-decoration: underline;">
+            <b><a href="https://funnel-purplehoneyburn.emilyaurora.site"> I strongly encourage you to Watch the video
+                Clicking Below</a></b>
+          </p>
+          <p class="mt-4 text-center">
+            👇👇👇👇
+          </p>
+          <a href="https://funnel-purplehoneyburn.emilyaurora.site">
+            <img src="./img/cta.gif" class="w-100">
+          </a>
+          <a href="https://funnel-purplehoneyburn.emilyaurora.site"
+            class="btn btn-block btn-success btn-lg p-4 mt-4 mb-5 w-100 btn-swing animated infinite" style="font-size: x-large;">WATCH THE
+            VIDEO!</a>
+        </div>
+        <br/>
+        <br/>
+          <img src="./img/ref-logo.png" class="d-none d-md-block"/>
+          <img src="./img/AS-SEEN-ON-1-.jpg" class="w-100 d-block d-md-none"/>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <h3>Information</h3>
+            <ul style="list-style: none;" class="p-0">
+              <li><a href="./privacy-policy">Privacy Policy</a></li>
+              <li><a href="./terms-of-service">Term of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <p>
+              Copyright 2023 - Purple Honey Burn - All Rights Reserved <br />
+              This site is not a part of the Facebook website or Facebook Inc. <br />
+              Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+              <br />
+            </p>
+            <p class="mt-3" style="font-size: x-small;">
+              FDA Compliance <br />
+              The information on this website has not been evaluated by the Food & Drug Administration or any other
+              medical body. We do not aim to diagnose, treat, cure or prevent any illness or disease. Information is
+              shared for educational purposes only. <br />
+              You should always consult your doctor before acting on any content on this website, especially if you are
+              pregnant, nursing, taking medication or have a medical condition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
